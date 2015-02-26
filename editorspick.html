@@ -1,0 +1,82 @@
+<!Doctype html> 
+<head> 
+
+<title> Editor's Pick </title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<script> $(document).ready(function () {
+
+    $(".homepage-content-2").click(function () {
+
+
+        $(this).addClass("highlight");
+        $(".homepage-content").removeClass("highlight");
+
+
+
+    });
+
+    $(".homepage-content").click(function () {
+
+        $(".homepage-content-2").removeClass("highlight");
+        $(this).addClass("highlight");
+
+
+
+
+    });
+
+
+});
+</script> 
+
+<style>
+
+.cover-this-section {
+    width: 80%;
+    height: 100vh;
+    margin: 5% auto;
+    position: relative;
+}
+.homepage-content {
+    color: grey;
+    position: relative;
+    padding: 6px;
+    display: inline-block;
+    font-weight: 200;
+    font-family: Helvetica Neue, sans-serif;
+    margin: 15px 2px 5px 110px;
+    box-shadow: 1px 1px 2.5px;
+}
+.homepage-content-2 {
+    color: grey;
+    position: relative;
+    padding: 5px;
+    font-weight: 200;
+    display: inline-block;
+    font-family: Helvetica Neue, sans-serif;
+    box-shadow: 1px 1px 2.5px;
+}
+.highlight {
+     color: black;
+    font-weight: 300;
+    box-shadow: 1px 1px 2.2px;
+    border-radius: 2px;
+    border-bottom: 1px solid grey; }
+
+
+ </style> 
+
+</head> 
+<body>
+
+<div class="cover-this-section">
+    <div class="homepage-content">Editor's Pick</div>
+    <div class="homepage-content-2">Contributing List</div>
+</div>
+
+
+</body> 
+
+</html> 
